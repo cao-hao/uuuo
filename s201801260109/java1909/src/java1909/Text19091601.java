@@ -6,7 +6,9 @@ public class Text19091601 {
 	public static void main(String[] args) {
 		System.out.println("请输入一个整数");
 		Scanner scanner = new Scanner(System.in);
-		int score = scanner.nextInt();
+		String str = scanner.nextLine();
+		while (!"Quit".equalsIgnoreCase(str)) {
+		int score = Integer.parseInt(str);
 		
 		if(score > 100 || score < 0) {
 			System.out.println("输入错误");
@@ -20,7 +22,11 @@ public class Text19091601 {
 		}else {
 			System.out.println("D");
 		}
+        }
+		str = scanner.nextLine();
 		}
+		
+		
 	scanner.close();
 }
 }
