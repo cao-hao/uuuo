@@ -2,7 +2,7 @@ package java190904;
 
 import java.util.Scanner;
 
-public class Test1 {
+public class test1 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int a = scanner.nextInt();
@@ -13,3 +13,4 @@ public class Test1 {
 		scanner.getClass();
 	}
 }
+
