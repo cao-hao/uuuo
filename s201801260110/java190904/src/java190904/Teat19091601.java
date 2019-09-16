@@ -4,7 +4,10 @@ public class Teat19091601 {
 	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int score = scanner.nextInt();
+		
+		String str = scanner.nextLine();
+		while (!"Quit".equalsIgnoreCase(str)) {
+		int score = Integer.parseInt(str);
 		
 		if (score > 100 || score < 0) {
 			System.out.println("ÊäÈë´íÎó");
@@ -20,7 +23,7 @@ public class Teat19091601 {
 			}
 		}
 		
-		scanner.close();
+		str = scanner.nextLine();
 	}
 
 }
