@@ -8,11 +8,15 @@ import java.util.Scanner;
  *C: <80 >=70
  *D: <70
  *如果输入的数字小于0或大于100，则提示用户输入错误。
+ *以上操作，重复执行，直到用户输入了Quit。
  */
 public class Test19091601 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int score = scanner.nextInt();
+		
+		String str = scanner.nextLine();
+		while(!"Quit".equals(str)) {
+		int score = Integer.parseInt(str);
 		
 		if (score > 100 || score < 0) {
 			System.out.println("输入错误");}
@@ -27,8 +31,14 @@ public class Test19091601 {
 				System.out.println("D");}
 		
 		}
-	
+
+		str = scanner.nextLine();
+	scanner.close();
+		}
 	}
-		
 }
+		
+		
+		
+
 
