@@ -1,3 +1,4 @@
+
 package java1909;
 
 import java.util.Scanner;
@@ -7,10 +8,7 @@ public class test01 {
 		Scanner scanner = new Scanner(System.in);
 		int a = scanner.nextInt();
 		int b = scanner.nextInt();
-		
 		System.out.println(a / b);
-		
 		scanner.close();
 	}
-
 }
